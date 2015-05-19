@@ -26,5 +26,6 @@
 <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="bower_components/c3/c3.min.js"></script>
+<script src="bower_components/js/min/scripts-min.js"></script>
 </body>
 </html>
