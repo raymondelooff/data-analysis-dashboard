@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="bower_components/c3/c3.min.css" rel="stylesheet">
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet">
     <link href="css/screen.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -26,6 +27,6 @@
 <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="bower_components/c3/c3.min.js"></script>
-<script src="bower_components/js/min/scripts-min.js"></script>
+<script src="js/min/scripts-min.js"></script>
 </body>
 </html>
