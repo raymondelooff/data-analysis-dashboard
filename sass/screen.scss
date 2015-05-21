@@ -9,3 +9,219 @@
 
 // Import Compass
 @import "compass";
+
+// Import fullPage.js
+@import "jquery.fullPage";
+
+// Body
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+p {
+	margin-bottom: 20px;
+
+	&.intro {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+table {
+	margin-bottom: 20px;
+}
+
+// Sections and slides
+.section {
+	overflow: hidden;
+}
+
+.fp-controlArrow {
+	display: none;
+
+	&.fp-prev {
+		border-color: transparent transparentize(#000, .9) transparent transparent;
+	}
+
+	&.fp-next {
+		border-color: transparent transparent transparent transparentize(#000, .9);
+	}
+}
+
+// Header
+header {
+	background: #015291;
+	color: #FFF;
+	text-align: center;
+
+	h1 {
+		font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin: 30px 0;
+		text-shadow: 0 2px transparentize(#000, .8);
+	}
+
+	img {
+		height: 200px;
+	}
+}
+
+// Question
+.question {
+	background: #017bc8;
+	color: #FFF;
+	text-align: center;
+
+	h1 {
+		font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin: 30px 0;
+		text-shadow: 0 2px transparentize(#000, .8);
+	}
+}
+
+// Animated elements
+.animated {
+	display: none;
+}
+
+// Charts
+.chart-wrapper {
+	height: 400px;
+
+	.chart {
+		height: 400px;
+	}
+
+	.mobile-link {
+		display: none;
+	}
+}
+
+// Breakpoints
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	.container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.fp-controlArrow {
+		display: block;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	h1, .h1 {
+		font-size: floor(($font-size-base * 3.5));
+	}
+
+	h2, .h2 {
+		font-size: floor(($font-size-base * 2));
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	h1, .h1 {
+		font-size: floor(($font-size-base * 2.5));
+	}
+
+	h2, .h2 {
+		font-size: floor(($font-size-base * 1.8));
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	h1, .h1 {
+		font-size: floor(($font-size-base * 1.7));
+	}
+
+	h2, .h2 {
+		font-size: floor(($font-size-base * 1.6));
+	}
+
+	header {
+		h1 {
+			margin: 20px 0;
+		}
+
+		img {
+			height: 150px;
+		}
+	}
+
+	.chart-wrapper {
+		.chart {
+			display: none !important;
+		}
+
+		.mobile-link {
+			display: inline-block;
+		}
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	h1, .h1 {
+		font-size: floor(($font-size-base * 1.6));
+	}
+
+	h2, .h2 {
+		font-size: floor(($font-size-base * 1.5));
+	}
+
+	header {
+		h1 {
+			margin: 15px 0;
+		}
+
+		img {
+			height: 100px;
+		}
+	}
+
+}
