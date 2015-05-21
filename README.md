@@ -10,3 +10,4 @@ This project contains a dashboard created as a project for **Data Analysis** as 
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 - [jQuery](https://jquery.com/)
 - [Bootstrap](http://getbootstrap.com/)
+- [fullPage.js](http://alvarotrigo.com/fullPage/)
