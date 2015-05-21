@@ -11,3 +11,4 @@ This project contains a dashboard created as a project for **Data Analysis** as 
 - [jQuery](https://jquery.com/)
 - [Bootstrap](http://getbootstrap.com/)
 - [fullPage.js](http://alvarotrigo.com/fullPage/)
+- [slimScroll](http://rocha.la/jQuery-slimScroll)
