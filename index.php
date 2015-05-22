@@ -47,25 +47,68 @@
                         <h2>Vrijetijdsbesteding per leeftijdscategorie</h2>
                         <p>
                             Hier ziet u de vrijetijdsbesteding gegroepeerd op leeftijdscategorie.
-                            De minimale leeftijd uit deze gegevens is <strong>XX</strong> jaar, de maximale leeftijd is <strong>XX</strong> jaar.
-                        </p>
-                        <p>
-                            Hier ziet u de vrijetijdsbesteding gegroepeerd op leeftijdscategorie.
-                            De minimale leeftijd uit deze gegevens is <strong>XX</strong> jaar, de maximale leeftijd is <strong>XX</strong> jaar.
+                            De grootte van de leeftijdsgroep in procenten wat minimaal 1 keer per maand de gegeven activiteit onderneemt.
                         </p>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
-                                    <th>Leeftijd</th>
-                                    <th>Activiteit</th>
-                                    <th>Percentage</th>
+                                    <tr>
+                                        <th>Leeftijd</th>
+                                        <th>Bioscoop</th>
+                                        <th>Concert</th>
+                                        <th>Museum</th>
+                                        <th>Toneel</th>
+                                    </tr>
                                 </thead>
-
                                 <tbody>
                                     <tr>
-                                        <td>18</td>
-                                        <td>Bier zuipen</td>
-                                        <td>100%</td>
+                                        <td>18-25</td>
+                                        <td>33%</td>
+                                        <td>7%</td>
+                                        <td>1%</td>
+                                        <td>1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25-35</td>
+                                        <td>33%</td>
+                                        <td>7%</td>
+                                        <td>1%</td>
+                                        <td>1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35-45</td>
+                                        <td>8%</td>
+                                        <td>4%</td>
+                                        <td>1%</td>
+                                        <td>1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>45-55</td>
+                                        <td>6%</td>
+                                        <td>4%</td>
+                                        <td>1%</td>
+                                        <td>1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55-65</td>
+                                        <td>4%</td>
+                                        <td>5%</td>
+                                        <td>2%</td>
+                                        <td>2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>65-75</td>
+                                        <td>1%</td>
+                                        <td>3%</td>
+                                        <td>2%</td>
+                                        <td>1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>75+</td>
+                                        <td>0%</td>
+                                        <td>2%</td>
+                                        <td>1%</td>
+                                        <td>1%</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -85,6 +128,12 @@
         <div class="slide" data-anchor="section-3-slide-2">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-7">
+                        <div class="chart-wrapper">
+                            <div id="chart-q1-c2" class="chart animated" data-animations="fadeInLeftBig"></div>
+                            <p><a href="chart#chart-q1-c2" target="_blank" class="mobile-link">Toon grafiek &raquo;</a></p>
+                        </div>
+                    </div>
                     <div class="col-md-5">
                         <h2>Vrijetijdsbesteding per leeftijdscategorie</h2>
                         <p>
@@ -94,11 +143,12 @@
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
-                                <th>Leeftijd</th>
-                                <th>Activiteit</th>
-                                <th>Percentage</th>
+                                    <tr>
+                                        <th>Leeftijd</th>
+                                        <th>Activiteit</th>
+                                        <th>Percentage</th>
+                                    </tr>
                                 </thead>
-
                                 <tbody>
                                 <tr>
                                     <td>18</td>
@@ -107,12 +157,6 @@
                                 </tr>
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="chart-wrapper">
-                            <div id="chart-q1-c2" class="chart animated" data-animations="fadeInRightBig"></div>
-                            <p><a href="chart#chart-q1-c2" target="_blank" class="mobile-link">Toon grafiek &raquo;</a></p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +174,7 @@
 <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="bower_components/c3/c3.min.js"></script>
-<script src="js/min/scripts-min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

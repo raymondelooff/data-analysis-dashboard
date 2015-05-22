@@ -6,13 +6,35 @@ var charts = {}; // Array that will be filled with all the charts
 var initializeCharts = {
     q1: [
         {
-            title: 'Test titel 1',
+            title: 'Vrijetijdsbesteding per leeftijdscategorie',
+            settings: {
+                keys: {
+                    value: ['Bioscoop', 'Concert', 'Museum', 'Toneel']
+                },
+                groups: [
+                    ['Bioscoop', 'Concert', 'Museum', 'Toneel']
+                ]
+            },
+            layout: {
+                axis: {
+                    x: {
+                        type: 'category',
+                        categories: ['18-25', '25-35', '35-45', '45-55', '55-65', '65-75', '75+']
+                    }
+                },
+                size: {
+                    height: 550
+                }
+            }
+        },
+        {
+            title: 'Test titel 2',
             settings: {
                 keys: {
                     value: ['upload', 'download']
                 }
             }
-        },
+        }
     ]
 };
 
@@ -47,7 +69,7 @@ $(document).ready(function() {
                 data: {
                     url: '/data/chart-' + chart_id + '.json',
                     mimeType: 'json',
-                    type: 'bar',
+                    type: 'bar'
                 },
                 grid: {
                     y: {
@@ -58,6 +80,7 @@ $(document).ready(function() {
 
             // Extend the 'data' array
             $.extend(chart_data['data'], chart['settings']);
+            $.extend(chart_data, chart['layout']);
 
             charts[chart_id] = c3.generate(chart_data);
         }

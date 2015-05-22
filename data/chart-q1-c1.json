@@ -1,6 +1,9 @@
 [
-  {"name": "www.site1.com", "upload": 200, "download": 200, "total": 400},
-  {"name": "www.site2.com", "upload": 100, "download": 300, "total": 400},
-  {"name": "www.site3.com", "upload": 300, "download": 200, "total": 500},
-  {"name": "www.site4.com", "upload": 400, "download": 100, "total": 500}
+  {"name": "18 tot 25 jarigen", "Bioscoop": 33, "Concert": 7, "Museum": 1, "Toneel": 1},
+  {"name": "25 tot 35 jarigen", "Bioscoop": 17, "Concert": 5, "Museum": 0, "Toneel": 2},
+  {"name": "35 tot 45 jarigen", "Bioscoop": 8, "Concert": 4, "Museum": 1, "Toneel": 1},
+  {"name": "45 tot 55 jarigen", "Bioscoop": 6, "Concert": 4, "Museum": 1, "Toneel": 1},
+  {"name": "55 tot 65 jarigen", "Bioscoop": 4, "Concert": 5, "Museum": 2, "Toneel": 2},
+  {"name": "65 tot 75 jarigen", "Bioscoop": 1, "Concert": 3, "Museum": 2, "Toneel": 1},
+  {"name": "75 jarigen of ouder", "Bioscoop": 0, "Concert": 2, "Museum": 1, "Toneel": 1}
 ]
