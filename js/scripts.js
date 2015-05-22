@@ -5,8 +5,7 @@ var charts = {}; // Array that will be filled with all the charts
 // Edit this array to make new charts for every section and slide
 var initializeCharts = {
     q1: [
-        {
-            title: 'Vrijetijdsbesteding per leeftijdscategorie',
+        { // Vrijetijdsbesteding per leeftijdscategorie
             data: {
                 type: 'bar',
                 x: 'x',
@@ -14,20 +13,29 @@ var initializeCharts = {
                     ["Bioscoop", "Concert", "Museum", "Toneel"]
                 ]
             },
-            settings: {
+            axis: {
+                y : {
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
+            other: {
                 size: {
                     height: 550
                 }
             }
         },
-        {
-            title: 'Test titel 2',
-            settings: {
+        { // Test titel 2
+            other: {
                 keys: {
                     value: ['upload', 'download']
                 }
             }
         }
+    ],
+    q2: [
+
     ]
 };
 
@@ -75,9 +83,12 @@ $(document).ready(function() {
                 }
             };
 
-            // Extend the chart array
+            // Extend the chart array with chart specific settings
             $.extend(chart_data['data'], chart['data']);
-            $.extend(chart_data, chart['settings']);
+            $.extend(chart_data['axis'], chart['axis']);
+            $.extend(chart_data, chart['other']);
+
+            console.log(chart_data);
 
             charts[chart_id] = c3.generate(chart_data);
         }
