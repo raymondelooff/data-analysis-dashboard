@@ -8,20 +8,13 @@ var initializeCharts = {
         {
             title: 'Vrijetijdsbesteding per leeftijdscategorie',
             settings: {
-                keys: {
-                    value: ['Bioscoop', 'Concert', 'Museum', 'Toneel']
-                },
+                type: 'bar',
+                x: 'x',
                 groups: [
-                    ['Bioscoop', 'Concert', 'Museum', 'Toneel']
+                    ["Bioscoop", "Concert", "Museum", "Toneel"]
                 ]
             },
             layout: {
-                axis: {
-                    x: {
-                        type: 'category',
-                        categories: ['18-25', '25-35', '35-45', '45-55', '55-65', '65-75', '75+']
-                    }
-                },
                 size: {
                     height: 550
                 }
@@ -68,8 +61,12 @@ $(document).ready(function() {
                 bindto: '#chart-' + chart_id,
                 data: {
                     url: '/data/chart-' + chart_id + '.json',
-                    mimeType: 'json',
-                    type: 'bar'
+                    mimeType: 'json'
+                },
+                axis: {
+                    x: {
+                        type: 'category'
+                    }
                 },
                 grid: {
                     y: {
