@@ -7,14 +7,14 @@ var initializeCharts = {
     q1: [
         {
             title: 'Vrijetijdsbesteding per leeftijdscategorie',
-            settings: {
+            data: {
                 type: 'bar',
                 x: 'x',
                 groups: [
                     ["Bioscoop", "Concert", "Museum", "Toneel"]
                 ]
             },
-            layout: {
+            settings: {
                 size: {
                     height: 550
                 }
@@ -75,9 +75,9 @@ $(document).ready(function() {
                 }
             };
 
-            // Extend the 'data' array
-            $.extend(chart_data['data'], chart['settings']);
-            $.extend(chart_data, chart['layout']);
+            // Extend the chart array
+            $.extend(chart_data['data'], chart['data']);
+            $.extend(chart_data, chart['settings']);
 
             charts[chart_id] = c3.generate(chart_data);
         }
