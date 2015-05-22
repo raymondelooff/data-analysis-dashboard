@@ -1,5 +1,5 @@
 var SECTION_SCROLL_SPEED = 700; // Milliseconds
-var lastSection = null; // Last section
+var lastView = null; // Last view
 var charts = {}; // Array that will be filled with all the charts
 
 // Edit this array to make new charts for every section and slide
@@ -45,12 +45,12 @@ $(document).ready(function() {
         scrollingSpeed: SECTION_SCROLL_SPEED,
         scrollOverflow: true,
         onLeave: function(index, nextIndex, direction) {
-            lastSection = $(this);
+            lastView = $(this);
         },
         onSlideLeave: function(anchorLink, index, slideIndex, direction){
-            lastSection = $(this);
+            lastView = $(this);
         },
-        afterLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+        afterLoad: function(anchorLink, index) {
             animate($(this));
         },
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
@@ -90,21 +90,25 @@ $(document).ready(function() {
 });
 
 // Calls animate.css animations again
-function animate(slide) {
+function animate(view) {
 
     // Previous slide
-    if(lastSection != null) {
-        var previousSlide = lastSection;
-        var previousAnimated = previousSlide.find('.animated');
+    if(lastView != null) {
+        var previousView = lastView;
+        var previousAnimated = previousView.find('.animated');
         var previousAnimations = previousAnimated.attr('data-animations');
 
         previousAnimated.hide().removeClass(previousAnimations);
     }
 
     // New slide
-    var animated = slide.find('.animated');
+    if(view.find('.slide').length > 0) {
+        var animated = view.find('.slide.active .animated');
+    }
+    else {
+        var animated = view.find('.animated');
+    }
     var animations = animated.attr('data-animations');
-
     animated.show().addClass(animations);
 
 }
