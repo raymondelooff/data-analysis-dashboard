@@ -13,6 +13,10 @@
 // Import fullPage.js
 @import "jquery.fullPage";
 
+// Variables
+$color_dark_blue: #015291;
+$color_blue: #017bc8;
+
 // Body
 body {
 	line-height: 1.5;
@@ -52,7 +56,7 @@ table {
 
 // Header
 header {
-	background: #015291;
+	background: $color_dark_blue;
 	color: #FFF;
 	text-align: center;
 
@@ -69,7 +73,7 @@ header {
 
 // Question
 .question {
-	background: #017bc8;
+	background: $color_blue;
 	color: #FFF;
 	text-align: center;
 
@@ -95,6 +99,29 @@ header {
 
 	.mobile-link {
 		display: none;
+	}
+}
+
+// Toggle buttons
+.btn-blue-bg {
+	background-color: $color_blue;
+	color: #FFFFFF;
+
+	@include transition(color 0.2s linear);
+
+	&:hover {
+		color: transparentize(#FFFFFF, 0.2);
+	}
+}
+
+.btn-dark-blue-bg {
+	background-color: $color_dark_blue;
+	color: #FFFFFF;
+
+	@include transition(color 0.2s linear);
+
+	&:hover {
+		color: transparentize(#FFFFFF, 0.2);
 	}
 }
 

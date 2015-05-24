@@ -1,11 +1,11 @@
 var SECTION_SCROLL_SPEED = 700; // Milliseconds
 var lastView = null; // Last view
-var charts = {}; // Array that will be filled with all the charts
+var charts_array = {}; // Array that will be filled with all the charts
 
 // Edit this array to make new charts for every section and slide
 var initializeCharts = {
     q1: [
-        { // Vrijetijdsbesteding per leeftijdscategorie
+        { // Cultuurbezoek per leeftijdscategorie #1
             data: {
                 type: 'bar',
                 x: 'x',
@@ -26,10 +26,28 @@ var initializeCharts = {
                 }
             }
         },
-        { // Test titel 2
+        { // Cultuurbezoek per leeftijdscategorie #2
+            data: {
+                type: 'bar',
+                x: 'x',
+                groups: [
+                    ["Bioscoop", "Concert", "Museum", "Toneel"]
+                ]
+            },
+            axis: {
+                y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
             other: {
-                keys: {
-                    value: ['upload', 'download']
+                size: {
+                    height: 550
                 }
             }
         }
@@ -88,10 +106,22 @@ $(document).ready(function() {
             $.extend(chart_data['axis'], chart['axis']);
             $.extend(chart_data, chart['other']);
 
-            charts[chart_id] = c3.generate(chart_data);
+            charts_array[chart_id] = c3.generate(chart_data);
         }
 
     });
+
+    $("#chart-toggle").on('change', function() {
+        var checked = $(this).prop('checked');
+        var chart_id = $(this).attr('data-chart-id');
+        var chart = charts_array[chart_id];
+
+        if(checked) {
+            chart.transform('bar');
+        } else {
+            chart.transform('line');
+        }
+    })
 
 });
 
@@ -114,7 +144,9 @@ function animate(view) {
     else {
         var animated = view.find('.animated');
     }
-    var animations = animated.attr('data-animations');
-    animated.show().addClass(animations);
+    $.each(animated, function() {
+        var animations = $(this).attr('data-animations');
+        $(this).show().addClass(animations);
+    });
 
 }
