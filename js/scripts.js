@@ -1,6 +1,7 @@
 var SECTION_SCROLL_SPEED = 700; // Milliseconds
 var lastView = null; // Last view
-var charts_array = {}; // Array that will be filled with all the charts
+var charts_data_array = {}; // Array that will be filled with all the charts
+var charts_array = {}; // Array that will be filled with all the charts and can be modified
 
 // Edit this array to make new charts for every section and slide
 var initializeCharts = {
@@ -32,6 +33,31 @@ var initializeCharts = {
                 x: 'x',
                 groups: [
                     ["Bioscoop", "Concert", "Museum", "Toneel"]
+                ]
+            },
+            axis: {
+                y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
+            other: {
+                size: {
+                    height: 550
+                }
+            }
+        },
+        { // Cafebezoeken per leeftijdscategorie in de tijd
+            data: {
+                type: 'bar',
+                x: 'x',
+                groups: [
+                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
                 ]
             },
             axis: {
@@ -107,19 +133,23 @@ $(document).ready(function() {
             $.extend(chart_data, chart['other']);
 
             charts_array[chart_id] = c3.generate(chart_data);
+            charts_data_array[chart_id] = chart_data;
         }
 
     });
 
-    $("#chart-toggle").on('change', function() {
+    $(".chart-toggle").on('change', function() {
         var checked = $(this).prop('checked');
         var chart_id = $(this).attr('data-chart-id');
+        var chart_data = charts_data_array[chart_id];
         var chart = charts_array[chart_id];
 
         if(checked) {
             chart.transform('bar');
+            chart.groups(chart_data['data']['groups']);
         } else {
             chart.transform('line');
+            chart.groups([]);
         }
     })
 
