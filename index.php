@@ -43,7 +43,7 @@
         <div class="slide" data-anchor="section-3-slide-1">
             <div class="container">
                 <div class="row clearfix">
-                    <div class="col-md-5">
+                    <div class="col-md-6 col-lg-5">
                         <h2>Vrijetijdsbesteding per leeftijdscategorie</h2>
                         <p>
                             Hier ziet u de vrijetijdsbesteding gegroepeerd op leeftijdscategorie.
@@ -114,7 +114,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-6 col-lg-7">
                         <div class="chart-wrapper">
                             <div id="chart-q1-c1" class="chart animated" data-animations="fadeInRightBig"></div>
                             <p><a href="chart#chart-q1-c1" target="_blank" class="mobile-link">Toon grafiek &raquo;</a></p>

@@ -88,8 +88,6 @@ $(document).ready(function() {
             $.extend(chart_data['axis'], chart['axis']);
             $.extend(chart_data, chart['other']);
 
-            console.log(chart_data);
-
             charts[chart_id] = c3.generate(chart_data);
         }
 

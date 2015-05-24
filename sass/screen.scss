@@ -87,6 +87,12 @@ header {
 
 // Charts
 .chart-wrapper {
+	min-height: 400px;
+
+	.chart {
+		min-height: 400px;
+	}
+
 	.mobile-link {
 		display: none;
 	}
