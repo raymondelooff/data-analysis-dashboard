@@ -51,6 +51,34 @@ table {
 
 	&.fp-next {
 		border-color: transparent transparent transparent transparentize(#000, .9);
+		right: 40px;
+	}
+}
+
+// fullpage nav
+#fp-nav {
+	background: #FFF;
+	@include border-left-radius(7px);
+	@include box-shadow(-2px 0 10px transparentize(#000, .85));
+
+	&.right {
+		right: 0;
+	}
+
+	ul {
+		li {
+			a {
+				span {
+					width: 5px;
+					height: 5px;
+				}
+			}
+
+			.fp-tooltip {
+				font-family: $font-family-base;
+				color: $text-color;
+			}
+		}
 	}
 }
 
@@ -96,10 +124,6 @@ header {
 	.chart {
 		min-height: 400px;
 	}
-
-	.mobile-link {
-		display: none;
-	}
 }
 
 // Toggle buttons
@@ -123,6 +147,15 @@ header {
 	&:hover {
 		color: transparentize(#FFFFFF, 0.2);
 	}
+}
+
+// Mobile
+.mobile-visible {
+	display: none;
+}
+
+.mobile-hidden {
+	display: block;
 }
 
 // Breakpoints
@@ -182,6 +215,14 @@ header {
 		font-size: floor(($font-size-base * 2));
 	}
 
+	.mobile-visible {
+		display: block;
+	}
+
+	.mobile-hidden {
+		display: none;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -221,10 +262,6 @@ header {
 	.chart-wrapper {
 		.chart {
 			display: none !important;
-		}
-
-		.mobile-link {
-			display: inline-block;
 		}
 	}
 

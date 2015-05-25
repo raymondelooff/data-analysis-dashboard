@@ -4,6 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Too many icons, but needed because awesome -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Data Analyse</title>
 
     <!-- Bootstrap -->
@@ -114,11 +134,13 @@
                                 </tbody>
                             </table>
                         </div>
+                        <p class="mobile-visible">
+                            <a href="chart#chart-q1-c1" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
                     </div>
-                    <div class="col-md-6 col-lg-7">
+                    <div class="col-md-6 col-lg-7 mobile-hidden">
                         <div class="chart-wrapper">
                             <div id="chart-q1-c1" class="chart animated" data-animations="fadeInRightBig"></div>
-                            <p><a href="chart#chart-q1-c1" target="_blank" class="mobile-link">Toon grafiek &raquo;</a></p>
                         </div>
                     </div>
                 </div>
@@ -129,13 +151,12 @@
         <div class="slide" data-anchor="section-3-slide-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-7">
+                    <div class="col-md-6 col-lg-7 mobile-hidden">
                         <div class="chart-wrapper">
                             <div id="chart-q1-c2" class="chart animated" data-animations="fadeInLeftBig"></div>
-                            <p><a href="chart#chart-q1-c2" target="_blank" class="mobile-link">Toon grafiek &raquo;</a></p>
                         </div>
                         <div class="animated text-center" data-animations="fadeInUpBig">
-                            <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="128">
+                            <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5">
@@ -208,6 +229,9 @@
                                 </tbody>
                             </table>
                         </div>
+                        <p class="mobile-visible">
+                            <a href="chart#chart-q1-c2" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -351,14 +375,16 @@
                                 </tbody>
                             </table>
                         </div>
+                        <p class="mobile-visible">
+                            <a href="chart#chart-q1-c3" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
                     </div>
-                    <div class="col-md-6 col-lg-7">
+                    <div class="col-md-6 col-lg-7 mobile-hidden">
                         <div class="chart-wrapper">
                             <div id="chart-q1-c3" class="chart animated" data-animations="fadeInRightBig"></div>
-                            <p><a href="chart#chart-q1-c3" target="_blank" class="mobile-link">Toon grafiek &raquo;</a></p>
                         </div>
                         <div class="animated text-center" data-animations="fadeInUpBig">
-                            <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="128">
+                            <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                         </div>
                     </div>
                 </div>

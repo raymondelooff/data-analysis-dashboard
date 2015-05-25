@@ -89,6 +89,7 @@ $(document).ready(function() {
     $("#wrapper").fullpage({
         scrollingSpeed: SECTION_SCROLL_SPEED,
         scrollOverflow: true,
+        navigation: true,
         onLeave: function(index, nextIndex, direction) {
             lastView = $(this);
         },
