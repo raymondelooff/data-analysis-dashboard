@@ -135,7 +135,7 @@
                             </table>
                         </div>
                         <p class="mobile-visible">
-                            <a href="chart#chart-q1-c1" target="_blank">Toon grafiek &raquo;</a>
+                            <a href="charts.php#chart-q1-c1" target="_blank">Toon grafiek &raquo;</a>
                         </p>
                     </div>
                     <div class="col-md-6 col-lg-7 mobile-hidden">
@@ -230,7 +230,7 @@
                             </table>
                         </div>
                         <p class="mobile-visible">
-                            <a href="chart#chart-q1-c2" target="_blank">Toon grafiek &raquo;</a>
+                            <a href="charts.php#chart-q1-c2" target="_blank">Toon grafiek &raquo;</a>
                         </p>
                     </div>
                 </div>
@@ -376,7 +376,7 @@
                             </table>
                         </div>
                         <p class="mobile-visible">
-                            <a href="chart#chart-q1-c3" target="_blank">Toon grafiek &raquo;</a>
+                            <a href="charts.php#chart-q1-c3" target="_blank">Toon grafiek &raquo;</a>
                         </p>
                     </div>
                     <div class="col-md-6 col-lg-7 mobile-hidden">
