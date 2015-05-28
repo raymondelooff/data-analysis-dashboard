@@ -42,28 +42,20 @@
 </head>
 <body>
 
-<div id="wrapper">
-
-    <header class="section" data-anchor="section-1">
-        <div class="container animated" data-animations="fadeInUp">
-            <img src="images/hz-logo.png" alt="HZ Logo">
-            <h1>Data Analyse</h1>
-            <p class="intro">CU08662 Data Analyse 1 - HZ University of Applied Sciences</p>
-        </div>
-    </header>
-
-    <section class="section question" data-anchor="section-2">
-        <div class="container animated" data-animations="bounceInUp">
-            <h1>Diagrammen</h1>
-            <p class="intro">Is er een verband tussen opleidingsniveau's en vrijetijdsbesteding?</p>
-        </div>
-    </section>
+<div id="wrapper" class="charts-overview">
 
     <!-- Chart -->
     <section class="section" data-anchor="chart-q1-c1">
         <div class="container">
             <div class="row clearfix">
-                <div id="chart-q1-c1" class="chart animated" data-animations="fadeInDownBig"></div>
+                <div class="chart-wrapper">
+                    <div id="chart-q1-c1" class="chart"></div>
+                </div>
+                <div class="chart-toggle-wrapper text-center">
+                    <div class="chart-toggle-wrapper-inner">
+                        <input data-chart-id="q1-c1" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -72,9 +64,13 @@
     <section class="section" data-anchor="chart-q1-c2">
         <div class="container">
             <div class="row clearfix">
-                <div id="chart-q1-c2" class="chart animated" data-animations="fadeInDownBig"></div>
-                <div class="animated text-center" data-animations="fadeInUpBig">
-                    <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                <div class="chart-wrapper">
+                    <div id="chart-q1-c2" class="chart"></div>
+                </div>
+                <div class="chart-toggle-wrapper text-center">
+                    <div class="chart-toggle-wrapper-inner">
+                        <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,9 +80,13 @@
     <section class="section" data-anchor="chart-q1-c3">
         <div class="container">
             <div class="row clearfix">
-                <div id="chart-q1-c3" class="chart animated" data-animations="fadeInDownBig"></div>
-                <div class="animated text-center" data-animations="fadeInUpBig">
-                    <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                <div class="chart-wrapper">
+                    <div id="chart-q1-c3" class="chart"></div>
+                </div>
+                <div class="chart-toggle-wrapper text-center">
+                    <div class="chart-toggle-wrapper-inner">
+                        <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                    </div>
                 </div>
             </div>
         </div>

@@ -64,84 +64,94 @@
         <div class="slide" data-anchor="section-3-slide-1">
             <div class="container">
                 <div class="row clearfix">
-                    <div class="col-md-6 col-lg-5">
+                    <div class="col-md-12 col-lg-5">
                         <h2>Cultuurbezoeken per leeftijdscategorie</h2>
                         <p>
                             Hier ziet u de cultuurbezoeken gegroepeerd op leeftijdscategorie.
                             De grootte van de leeftijdsgroep in procenten wat minimaal 1 keer per maand de gegeven activiteit onderneemt.
                         </p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
-                                    <tr>
-                                        <th>Leeftijd</th>
-                                        <th>Bioscoop</th>
-                                        <th>Concert</th>
-                                        <th>Museum</th>
-                                        <th>Toneel</th>
-                                    </tr>
+                                <tr>
+                                    <th>Leeftijd</th>
+                                    <th>Bioscoop</th>
+                                    <th>Concert</th>
+                                    <th>Museum</th>
+                                    <th>Toneel</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>18-25</td>
-                                        <td>33%</td>
-                                        <td>7%</td>
-                                        <td>1%</td>
-                                        <td>1%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>25-35</td>
-                                        <td>17%</td>
-                                        <td>5%</td>
-                                        <td>0%</td>
-                                        <td>2%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>35-45</td>
-                                        <td>8%</td>
-                                        <td>4%</td>
-                                        <td>1%</td>
-                                        <td>1%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>45-55</td>
-                                        <td>6%</td>
-                                        <td>4%</td>
-                                        <td>1%</td>
-                                        <td>1%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>55-65</td>
-                                        <td>4%</td>
-                                        <td>5%</td>
-                                        <td>2%</td>
-                                        <td>2%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>65-75</td>
-                                        <td>1%</td>
-                                        <td>3%</td>
-                                        <td>2%</td>
-                                        <td>1%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>75+</td>
-                                        <td>0%</td>
-                                        <td>2%</td>
-                                        <td>1%</td>
-                                        <td>1%</td>
-                                    </tr>
+                                <tr>
+                                    <td>18-25</td>
+                                    <td>33%</td>
+                                    <td>7%</td>
+                                    <td>1%</td>
+                                    <td>1%</td>
+                                </tr>
+                                <tr>
+                                    <td>25-35</td>
+                                    <td>17%</td>
+                                    <td>5%</td>
+                                    <td>0%</td>
+                                    <td>2%</td>
+                                </tr>
+                                <tr>
+                                    <td>35-45</td>
+                                    <td>8%</td>
+                                    <td>4%</td>
+                                    <td>1%</td>
+                                    <td>1%</td>
+                                </tr>
+                                <tr>
+                                    <td>45-55</td>
+                                    <td>6%</td>
+                                    <td>4%</td>
+                                    <td>1%</td>
+                                    <td>1%</td>
+                                </tr>
+                                <tr>
+                                    <td>55-65</td>
+                                    <td>4%</td>
+                                    <td>5%</td>
+                                    <td>2%</td>
+                                    <td>2%</td>
+                                </tr>
+                                <tr>
+                                    <td>65-75</td>
+                                    <td>1%</td>
+                                    <td>3%</td>
+                                    <td>2%</td>
+                                    <td>1%</td>
+                                </tr>
+                                <tr>
+                                    <td>75+</td>
+                                    <td>0%</td>
+                                    <td>2%</td>
+                                    <td>1%</td>
+                                    <td>1%</td>
+                                </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q1-c1" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                        </div>
+                        <div class="chart-toggle-wrapper text-center mobile-hidden">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                                <input data-chart-id="q1-c1" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                            </div>
                         </div>
                         <p class="mobile-visible">
                             <a href="charts.php#chart-q1-c1" target="_blank">Toon grafiek &raquo;</a>
                         </p>
-                    </div>
-                    <div class="col-md-6 col-lg-7 mobile-hidden">
-                        <div class="chart-wrapper">
-                            <div id="chart-q1-c1" class="chart animated" data-animations="fadeInRightBig"></div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -151,20 +161,14 @@
         <div class="slide" data-anchor="section-3-slide-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-7 mobile-hidden">
-                        <div class="chart-wrapper">
-                            <div id="chart-q1-c2" class="chart animated" data-animations="fadeInLeftBig"></div>
-                        </div>
-                        <div class="animated text-center" data-animations="fadeInUpBig">
-                            <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
+                    <div class="col-md-12 col-lg-5">
                         <h2>Cultuurbezoeken per leeftijdscategorie</h2>
                         <p>
                             Hier ziet u net als op de vorige slide, de cultuurbezoeken gegroepeerd op leeftijdscategorie.
                             Echter is hier gekeken naar, de grootte van de leeftijdsgroep in procenten wat vaker dan 3 keer per jaar de gegeven activiteit onderneemt.
                         </p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -229,6 +233,19 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q1-c2" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                        </div>
+                        <div class="chart-toggle-wrapper text-center mobile-hidden">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                                <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                            </div>
+                        </div>
                         <p class="mobile-visible">
                             <a href="charts.php#chart-q1-c2" target="_blank">Toon grafiek &raquo;</a>
                         </p>
@@ -241,12 +258,14 @@
         <div class="slide" data-anchor="section-3-slide-3">
             <div class="container">
                 <div class="row clearfix">
-                    <div class="col-md-6 col-lg-5">
+                    <div class="col-md-12 col-lg-4">
                         <h2>Caf&eacute;bezoeken per leeftijdscategorie in de tijd</h2>
                         <p>
                             Hier ziet u de caf&eacute;bezoeken per leeftijdscategorie gegroepeerd op jaar.
                             De grootte van de leeftijdsgroep in procenten wat minimaal 1 keer per week een caf&eacute; bezoekt.
                         </p>
+                    </div>
+                    <div class="col-md-12 col-lg-8">
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -375,17 +394,22 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q1-c3" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                        </div>
+                        <div class="chart-toggle-wrapper text-center mobile-hidden">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                                <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
+                            </div>
+                        </div>
                         <p class="mobile-visible">
                             <a href="charts.php#chart-q1-c3" target="_blank">Toon grafiek &raquo;</a>
                         </p>
-                    </div>
-                    <div class="col-md-6 col-lg-7 mobile-hidden">
-                        <div class="chart-wrapper">
-                            <div id="chart-q1-c3" class="chart animated" data-animations="fadeInRightBig"></div>
-                        </div>
-                        <div class="animated text-center" data-animations="fadeInUpBig">
-                            <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -399,6 +423,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="bower_components/jquery.actual/jquery.actual.min.js"></script>
 <script src="bower_components/slimscroll/jquery.slimscroll.min.js"></script>
 <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
 <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>

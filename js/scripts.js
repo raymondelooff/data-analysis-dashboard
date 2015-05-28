@@ -16,15 +16,17 @@ var initializeCharts = {
             },
             axis: {
                 y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
                     tick: {
                         format: function (d) { return d + "%"; }
                     }
                 }
             },
             other: {
-                size: {
-                    height: 550
-                }
+
             }
         },
         { // Cultuurbezoek per leeftijdscategorie #2
@@ -47,9 +49,7 @@ var initializeCharts = {
                 }
             },
             other: {
-                size: {
-                    height: 550
-                }
+
             }
         },
         { // Cafebezoeken per leeftijdscategorie in de tijd
@@ -72,9 +72,7 @@ var initializeCharts = {
                 }
             },
             other: {
-                size: {
-                    height: 550
-                }
+
             }
         }
     ],
@@ -133,6 +131,17 @@ $(document).ready(function() {
             $.extend(chart_data['axis'], chart['axis']);
             $.extend(chart_data, chart['other']);
 
+            // Get the chart height
+            var chart_height = $(chart_data['bindto']).attr('data-chart-height');
+
+            if(chart_height != undefined) {
+                if(chart_data['size'] == undefined) {
+                    chart_data['size'] = {};
+                }
+
+                chart_data['size']['height'] = parseInt(chart_height);
+            }
+
             charts_array[chart_id] = c3.generate(chart_data);
             charts_data_array[chart_id] = chart_data;
         }
@@ -152,7 +161,12 @@ $(document).ready(function() {
             chart.transform('line');
             chart.groups([]);
         }
-    })
+    });
+
+    // Set chart container height
+    $.each($('.chart-container'), function() {
+        $(this).height($(this).actual('height'));
+    });
 
 });
 
