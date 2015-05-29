@@ -1,0 +1,7 @@
+{
+  "x": ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"],
+  "Cafebezoek": [8, 10, 17, 18, 24],
+  "Restaurantbezoek": [14, 23, 27, 34, 46],
+  "Dans-, disco-avond": [11, 10, 18, 14, 10],
+  "Gezellige middag of avond": [41, 41, 48, 48, 45]
+}

@@ -44,53 +44,46 @@
 
 <div id="wrapper" class="charts-overview">
 
-    <!-- Chart -->
-    <section class="section" data-anchor="chart-q1-c1">
-        <div class="container">
-            <div class="row clearfix">
-                <div class="chart-wrapper">
-                    <div id="chart-q1-c1" class="chart"></div>
-                </div>
-                <div class="chart-toggle-wrapper text-center">
-                    <div class="chart-toggle-wrapper-inner">
-                        <input data-chart-id="q1-c1" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
 
-    <!-- Chart slide -->
-    <section class="section" data-anchor="chart-q1-c2">
-        <div class="container">
-            <div class="row clearfix">
-                <div class="chart-wrapper">
-                    <div id="chart-q1-c2" class="chart"></div>
-                </div>
-                <div class="chart-toggle-wrapper text-center">
-                    <div class="chart-toggle-wrapper-inner">
-                        <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        $q1Length = 12;
+        $q2Length = 12;
 
-    <!-- Chart slide -->
-    <section class="section" data-anchor="chart-q1-c3">
-        <div class="container">
-            <div class="row clearfix">
-                <div class="chart-wrapper">
-                    <div id="chart-q1-c3" class="chart"></div>
-                </div>
-                <div class="chart-toggle-wrapper text-center">
-                    <div class="chart-toggle-wrapper-inner">
-                        <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        for($i = 1; $i <= $q1Length; $i++) {
+            echo '<section class="section" data-anchor="chart-q1-c' . $i . '">';
+                echo '<div class="container">';
+                    echo '<div class="row clearfix">';
+                        echo '<div class="chart-wrapper">';
+                            echo '<div id="chart-q1-c' . $i . '" class="chart"></div>';
+                        echo '</div>';
+                        echo '<div class="chart-toggle-wrapper text-center">';
+                            echo '<div class="chart-toggle-wrapper-inner">';
+                                echo '<input data-chart-id="q1-c' . $i . '" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">';
+                            echo '</div>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            echo '</section>';
+        }
+
+        for($i = 1; $i <= $q2Length; $i++) {
+            echo '<section class="section" data-anchor="chart-q2-c' . $i . '">';
+                echo '<div class="container">';
+                    echo '<div class="row clearfix">';
+                        echo '<div class="chart-wrapper">';
+                            echo '<div id="chart-q2-c' . $i . '" class="chart"></div>';
+                        echo '</div>';
+                        echo '<div class="chart-toggle-wrapper text-center">';
+                            echo '<div class="chart-toggle-wrapper-inner">';
+                                echo '<input data-chart-id="q2-c' . $i . '" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">';
+                            echo '</div>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            echo '</section>';
+        }
+
+    ?>
 
 </div>
 

@@ -1,0 +1,8 @@
+{
+  "x": ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"],
+  "Niet zo tevreden": [5, 3, 5, 4, 4],
+  "Tamelijk tevreden": [10, 10, 10, 12, 13],
+  "Tevreden": [53, 51, 45, 49, 45],
+  "Zeer tevreden": [27, 29, 32, 28, 32],
+  "Buitengewoon tevreden": [5, 7, 8, 7, 6]
+}

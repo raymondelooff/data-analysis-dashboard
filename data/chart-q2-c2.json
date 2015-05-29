@@ -1,0 +1,7 @@
+{
+  "x": ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"],
+  "Bioscoop": [13, 14, 24, 20, 29],
+  "Concert": [5, 8, 13, 12, 23],
+  "Museum": [6, 7, 13, 12, 25],
+  "Toneel": [2, 4, 8, 6, 14]
+}
