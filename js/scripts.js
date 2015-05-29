@@ -52,7 +52,122 @@ var initializeCharts = {
 
             }
         },
-        { // Cafebezoeken per leeftijdscategorie in de tijd
+        { // Cafebezoeken per leeftijdscategorie over de jaren #1
+            data: {
+                type: 'bar',
+                x: 'x',
+                groups: [
+                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
+                ]
+            },
+            axis: {
+                y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
+            other: {
+
+            }
+        },
+        { // Cafebezoeken per leeftijdscategorie over de jaren #2
+            data: {
+                type: 'bar',
+                x: 'x',
+                groups: [
+                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
+                ]
+            },
+            axis: {
+                y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
+            other: {
+
+            }
+        },
+        { // Restaurantbezoeken per leeftijdscategorie over de jaren #1
+            data: {
+                type: 'bar',
+                x: 'x',
+                groups: [
+                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
+                ]
+            },
+            axis: {
+                y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
+            other: {
+
+            }
+        },
+        { // Restaurantbezoeken per leeftijdscategorie over de jaren #2
+            data: {
+                type: 'bar',
+                x: 'x',
+                groups: [
+                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
+                ]
+            },
+            axis: {
+                y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
+            other: {
+
+            }
+        },
+        { // Dans/disco avond bezoeken per leeftijdscategorie over de jaren #1
+            data: {
+                type: 'bar',
+                x: 'x',
+                groups: [
+                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
+                ]
+            },
+            axis: {
+                y : {
+                    min: 0,
+                    padding: {
+                        bottom: 0
+                    },
+                    tick: {
+                        format: function (d) { return d + "%"; }
+                    }
+                }
+            },
+            other: {
+
+            }
+        },
+        { // Dans/disco avond bezoeken per leeftijdscategorie over de jaren #2
             data: {
                 type: 'bar',
                 x: 'x',
@@ -76,6 +191,7 @@ var initializeCharts = {
             }
         }
     ],
+
     q2: [
 
     ]
