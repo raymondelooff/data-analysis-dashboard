@@ -142,10 +142,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c1" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c1" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c1" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>
@@ -239,10 +239,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c2" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c2" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c2" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>
@@ -400,10 +400,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c3" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c3" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c3" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>
@@ -561,10 +561,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c4" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c4" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c4" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>
@@ -690,10 +690,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c5" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c5" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c5" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>
@@ -819,10 +819,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c6" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c6" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c6" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>
@@ -948,10 +948,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c7" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c7" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c7" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>
@@ -1077,10 +1077,10 @@
                 <div class="row clearfix">
                     <div class="chart-container col-lg-12">
                         <div class="chart-wrapper mobile-hidden">
-                            <div id="chart-q1-c8" class="chart animated" data-chart-height="550" data-animations="fadeInUpBig"></div>
+                            <div id="chart-q1-c8" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
                         </div>
                         <div class="chart-toggle-wrapper text-center mobile-hidden">
-                            <div class="chart-toggle-wrapper-inner animated" data-animations="fadeInUpBig">
+                            <div class="chart-toggle-wrapper-inner animated" data-animations="bounceIn">
                                 <input data-chart-id="q1-c8" class="chart-toggle" type="checkbox" checked data-toggle="toggle" data-on="Staafdiagram" data-off="Lijndiagram" data-onstyle="dark-blue-bg" data-offstyle="blue-bg" data-width="150">
                             </div>
                         </div>

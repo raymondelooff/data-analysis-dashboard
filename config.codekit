@@ -4602,6 +4602,61 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/data\/chart-q1-c4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/chart-q1-c4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/chart-q1-c4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/data\/chart-q1-c5.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/chart-q1-c5.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/chart-q1-c5-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/data\/chart-q1-c6.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/chart-q1-c6.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/chart-q1-c6-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/data\/chart-q1-c7.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/chart-q1-c7.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/chart-q1-c7-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/data\/chart-q1-c8.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/chart-q1-c8.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/chart-q1-c8-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/images\/hz-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
