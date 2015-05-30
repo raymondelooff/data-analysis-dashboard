@@ -3121,7 +3121,7 @@
 <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="bower_components/c3/c3.min.js"></script>
-<script src="js/charts.js"></script>
+<script src="js/min/charts-min.js"></script>
 <script src="js/min/scripts-min.js"></script>
 
 </body>

@@ -48,6 +48,7 @@
 
         $q1Length = 12;
         $q2Length = 12;
+        $q3Length = 5;
 
         for($i = 1; $i <= $q1Length; $i++) {
             echo '<section class="section" data-anchor="chart-q1-c' . $i . '">';
@@ -83,6 +84,18 @@
             echo '</section>';
         }
 
+        for($i = 1; $i <= $q3Length; $i++) {
+            echo '<section class="section" data-anchor="chart-q3-c' . $i . '">';
+                echo '<div class="container">';
+                    echo '<div class="row clearfix">';
+                        echo '<div class="chart-wrapper">';
+                            echo '<div id="chart-q3-c' . $i . '" class="chart"></div>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            echo '</section>';
+        }
+
     ?>
 
 </div>
@@ -96,7 +109,8 @@
 <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="bower_components/c3/c3.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/min/charts-min.js"></script>
+<script src="js/min/scripts-min.js"></script>
 
 </body>
 </html>
