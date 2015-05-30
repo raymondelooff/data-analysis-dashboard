@@ -2904,7 +2904,7 @@
         </div>
 
         <!-- Slide -->
-        <div class="slide" data-anchor="section-7-slide-2">
+        <div class="slide" data-anchor="section-7-slide-3">
             <div class="container">
                 <div class="row clearfix">
                     <div class="col-md-12 col-lg-5">
@@ -2972,7 +2972,7 @@
         </div>
 
         <!-- Slide -->
-        <div class="slide" data-anchor="section-7-slide-2">
+        <div class="slide" data-anchor="section-7-slide-4">
             <div class="container">
                 <div class="row clearfix">
                     <div class="col-md-12 col-lg-5">
@@ -3040,7 +3040,7 @@
         </div>
 
         <!-- Slide -->
-        <div class="slide" data-anchor="section-7-slide-2">
+        <div class="slide" data-anchor="section-7-slide-5">
             <div class="container">
                 <div class="row clearfix">
                     <div class="col-md-12 col-lg-5">
