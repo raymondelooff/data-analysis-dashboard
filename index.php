@@ -3109,6 +3109,13 @@
 
     </section>
 
+    <section class="section question" data-anchor="section-6">
+        <div class="container animated" data-animations="bounceInUp">
+            <h1>Conclusie</h1>
+            <p></p>
+        </div>
+    </section>
+
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
