@@ -3,567 +3,121 @@ var lastView = null; // Last view
 var charts_data_array = {}; // Array that will be filled with all the charts
 var charts_array = {}; // Array that will be filled with all the charts and can be modified
 
-// Edit this array to make new charts for every section and slide
-var initializeCharts = {
-    q1: [
-        { // Cultuurbezoek per leeftijdscategorie #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Bioscoop", "Concert", "Museum", "Toneel"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+// Function for calculating linear regression
+function linearRegression(y,x) {
+    var lr = {};
+    var n = y.length;
+    var sum_x = 0;
+    var sum_y = 0;
+    var sum_xy = 0;
+    var sum_xx = 0;
+    var sum_yy = 0;
 
-            }
-        },
-        { // Cultuurbezoek per leeftijdscategorie #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Bioscoop", "Concert", "Museum", "Toneel"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+    for (var i = 0; i < y.length; i++) {
 
-            }
-        },
-        { // Cafebezoeken per leeftijdscategorie over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+        sum_x += x[i];
+        sum_y += y[i];
+        sum_xy += (x[i]*y[i]);
+        sum_xx += (x[i]*x[i]);
+        sum_yy += (y[i]*y[i]);
+    }
 
-            }
-        },
-        { // Cafebezoeken per leeftijdscategorie over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+    lr['slope'] = (n * sum_xy - sum_x * sum_y) / (n*sum_xx - sum_x * sum_x);
+    lr['intercept'] = (sum_y - lr.slope * sum_x)/n;
+    lr['r2'] = Math.pow((n*sum_xy - sum_x*sum_y)/Math.sqrt((n*sum_xx-sum_x*sum_x)*(n*sum_yy-sum_y*sum_y)),2);
 
-            }
-        },
-        { // Restaurantbezoeken per leeftijdscategorie over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+    return lr;
+}
 
-            }
-        },
-        { // Restaurantbezoeken per leeftijdscategorie over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+// Calls animate.css animations again
+function animate(view) {
 
-            }
-        },
-        { // Dans/disco avond bezoeken per leeftijdscategorie over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+    // Previous slide
+    if(lastView != null) {
+        var previousView = lastView;
+        var previousAnimated = previousView.find('.animated');
+        var previousAnimations = previousAnimated.attr('data-animations');
 
-            }
-        },
-        { // Dans/disco avond bezoeken per leeftijdscategorie over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+        previousAnimated.hide().removeClass(previousAnimations);
+    }
 
-            }
-        },
-        { // Gezellige middag of avond bezoeken per leeftijdscategorie over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+    // New slide
+    if(view.find('.slide').length > 0) {
+        var animated = view.find('.slide.active .animated');
+    }
+    else {
+        var animated = view.find('.animated');
+    }
+    $.each(animated, function() {
+        var animations = $(this).attr('data-animations');
+        $(this).show().addClass(animations);
+    });
 
-            }
-        },
-        { // Gezellige middag of avond bezoeken per leeftijdscategorie over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["18-25", "25-35", "35-45", "45-55", "55-65", "65-75", "75+"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+}
 
-            }
-        },
-        { // Tevreden vrijetijdbesteding per leeftijdscategorie
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Niet zo tevreden", "Tamelijk tevreden", "Tevreden", "Zeer tevreden", "Buitengewoon tevreden"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+// Get JSON data when calculating moving average or linear regression
+function trendanalysis(chart_id, chart_data, chart) {
+    $.get(chart_data['data']['url'], function (json) {
 
-            }
-        },
-        { // Vrijetijdbesteding per leeftijdscategorie
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Cafebezoek", "Restaurantbezoek", "Dans-, disco-avond", "Gezellige middag of avond"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+        // Values
+        var data_keys = json['x'];
+        var data_values = json[chart['moving_average_key']];
 
-            }
+        // Moving average
+        if (chart['moving_average_key'] != undefined) {
+
+            var averages = ["3-staps zwevend gemiddelde"];
+
+            $.each(data_keys, function (index, x) {
+
+                // Store latest values
+                var first_value = null;
+                var second_value = null;
+                var third_value = null;
+
+                // Set values
+                if (index > 1) {
+                    first_value = data_values[index - 2];
+                    second_value = data_values[index - 1];
+                    third_value = d3.round((first_value + second_value + data_values[index]) / 3, 1);
+                }
+
+                // Store value in array
+                averages.push(third_value);
+
+            });
+
+            // Push averages to chart
+            charts_array[chart_id].load({
+                columns: [
+                    averages
+                ]
+            });
         }
 
-    ],
+        // Linear regression
+        if (chart['linear_regression'] == true) {
 
-    q2: [
-        { // Cultuurbezoek per opleidingsniveau #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Bioscoop", "Concert", "Museum", "Toneel"]
+            var linear_regression = linearRegression(data_values, data_keys);
+            var points = ["Linear"];
+
+            $.each(data_keys, function (index, x) {
+
+                var y = (x * linear_regression['slope'] + linear_regression['intercept']);
+                points.push(y);
+
+            });
+
+            // Push points to chart
+            charts_array[chart_id].load({
+                columns: [
+                    points
                 ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
+            });
 
-            }
-        },
-        { // Cultuurbezoek per opleidingsniveau #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Bioscoop", "Concert", "Museum", "Toneel"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Cafebezoeken per opleidingsniveau over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Cafebezoeken per opleidingsniveau over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Restaurantbezoeken per opleidingsniveau over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Restaurantbezoeken per opleidingsniveau over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Dans/disco avond bezoeken per opleidingsniveau over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Dans/disco avond bezoeken per opleidingsniveau over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Gezellige middag of avond bezoeken per opleidingsniveau over de jaren #1
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Gezellige middag of avond bezoeken per opleidingsniveau over de jaren #2
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Basisonderwijs", "VBO", "MAVO", "HAVO, MBO, VWO", "HBO, Universiteit"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Tevreden vrijetijdbesteding per opleidingsniveau
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Niet zo tevreden", "Tamelijk tevreden", "Tevreden", "Zeer tevreden", "Buitengewoon tevreden"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
-        },
-        { // Vrijetijdbesteding per opleidingsniveau
-            data: {
-                type: 'bar',
-                x: 'x',
-                groups: [
-                    ["Cafebezoek", "Restaurantbezoek", "Dans-, disco-avond", "Gezellige middag of avond"]
-                ]
-            },
-            axis: {
-                y : {
-                    min: 0,
-                    padding: {
-                        bottom: 0
-                    },
-                    tick: {
-                        format: function (d) { return d + "%"; }
-                    }
-                }
-            },
-            other: {
-
-            }
         }
-    ]
-};
+    });
+}
 
 $(document).ready(function() {
 
@@ -628,6 +182,11 @@ $(document).ready(function() {
 
             charts_array[chart_id] = c3.generate(chart_data);
             charts_data_array[chart_id] = chart_data;
+
+            // Call trend analysis function
+            if(chart['moving_average_key'] != undefined || chart['linear_regression'] == true) {
+                trendanalysis(chart_id, chart_data, chart);
+            }
         }
 
     });
@@ -653,29 +212,3 @@ $(document).ready(function() {
     });
 
 });
-
-// Calls animate.css animations again
-function animate(view) {
-
-    // Previous slide
-    if(lastView != null) {
-        var previousView = lastView;
-        var previousAnimated = previousView.find('.animated');
-        var previousAnimations = previousAnimated.attr('data-animations');
-
-        previousAnimated.hide().removeClass(previousAnimations);
-    }
-
-    // New slide
-    if(view.find('.slide').length > 0) {
-        var animated = view.find('.slide.active .animated');
-    }
-    else {
-        var animated = view.find('.animated');
-    }
-    $.each(animated, function() {
-        var animations = $(this).attr('data-animations');
-        $(this).show().addClass(animations);
-    });
-
-}

@@ -2759,6 +2759,356 @@
 
     </section>
 
+    <section class="section question" data-anchor="section-6">
+        <div class="container animated" data-animations="bounceInUp">
+            <h1>Trendanalyse</h1>
+            <p></p>
+        </div>
+    </section>
+
+    <section class="section" data-anchor="section-7">
+        <!-- Slide -->
+        <div class="slide" data-anchor="section-7-slide-1">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-lg-5">
+                        <h2>Tevredenheid per jaar</h2>
+                        <p>
+                            Hier ziet u de trendanalyse van de tevredenheid van de vrijetijdsbesteding, gegroepeerd per jaar.
+                            Het gaat hier om de tevredenheid <strong>'Niet zo tevreden'</strong>. Te zien valt dat het aantal niet zo tevreden mensen afneemt.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Jaar</th>
+                                    <th>'Niet zo tevreden'</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1997</td>
+                                    <td>5%</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>4%</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>5%</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>4%</td>
+                                </tr>
+                                <tr>
+                                    <td>2001</td>
+                                    <td>4%</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>4%</td>
+                                </tr>
+                                <tr>
+                                    <td>2003</td>
+                                    <td>4%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q3-c1" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
+                        </div>
+                        <p class="mobile-visible">
+                            <a href="charts.php#chart-q3-c1" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide -->
+        <div class="slide" data-anchor="section-7-slide-2">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-lg-5">
+                        <h2>Tevredenheid per jaar</h2>
+                        <p>
+                            Hier ziet u de trendanalyse van de tevredenheid van de vrijetijdsbesteding, gegroepeerd per jaar.
+                            Het gaat hier om de tevredenheid <strong>'Tamelijk tevreden'</strong>. Te zien valt dat het aantal tamelijk tevreden mensen afneemt.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Jaar</th>
+                                    <th>'Tamelijk tevreden'</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1997</td>
+                                    <td>12%</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>13%</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>12%</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>11%</td>
+                                </tr>
+                                <tr>
+                                    <td>2001</td>
+                                    <td>11%</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>12%</td>
+                                </tr>
+                                <tr>
+                                    <td>2003</td>
+                                    <td>11%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q3-c2" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
+                        </div>
+                        <p class="mobile-visible">
+                            <a href="charts.php#chart-q3-c2" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide -->
+        <div class="slide" data-anchor="section-7-slide-2">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-lg-5">
+                        <h2>Tevredenheid per jaar</h2>
+                        <p>
+                            Hier ziet u de trendanalyse van de tevredenheid van de vrijetijdsbesteding, gegroepeerd per jaar.
+                            Het gaat hier om de tevredenheid <strong>'Tevreden'</strong>. Te zien valt dat het aantal tevreden mensen toeneemt.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Jaar</th>
+                                    <th>'Tevreden'</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1997</td>
+                                    <td>48%</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>49%</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>45%</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>48%</td>
+                                </tr>
+                                <tr>
+                                    <td>2001</td>
+                                    <td>47%</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>48%</td>
+                                </tr>
+                                <tr>
+                                    <td>2003</td>
+                                    <td>49%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q3-c3" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
+                        </div>
+                        <p class="mobile-visible">
+                            <a href="charts.php#chart-q3-c3" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide -->
+        <div class="slide" data-anchor="section-7-slide-2">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-lg-5">
+                        <h2>Tevredenheid per jaar</h2>
+                        <p>
+                            Hier ziet u de trendanalyse van de tevredenheid van de vrijetijdsbesteding, gegroepeerd per jaar.
+                            Het gaat hier om de tevredenheid <strong>'Zeer tevreden'</strong>. Te zien valt dat het aantal zeer tevreden mensen toeneemt.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Jaar</th>
+                                    <th>'Zeer tevreden'</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1997</td>
+                                    <td>27%</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>27%</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>29%</td>
+                                </tr>
+                                <tr>
+                                    <td>2001</td>
+                                    <td>29%</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>28%</td>
+                                </tr>
+                                <tr>
+                                    <td>2003</td>
+                                    <td>29%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q3-c4" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
+                        </div>
+                        <p class="mobile-visible">
+                            <a href="charts.php#chart-q3-c4" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide -->
+        <div class="slide" data-anchor="section-7-slide-2">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-lg-5">
+                        <h2>Tevredenheid per jaar</h2>
+                        <p>
+                            Hier ziet u de trendanalyse van de tevredenheid van de vrijetijdsbesteding, gegroepeerd per jaar.
+                            Het gaat hier om de tevredenheid <strong>'Buitengewoon tevreden'</strong>. Te zien valt dat het aantal buitengewoon tevreden mensen afneemt.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Jaar</th>
+                                    <th>'Buitengewoon tevreden'</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1997</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>7%</td>
+                                </tr>
+                                <tr>
+                                    <td>2001</td>
+                                    <td>9%</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>2003</td>
+                                    <td>6%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="chart-container col-lg-12">
+                        <div class="chart-wrapper mobile-hidden">
+                            <div id="chart-q3-c5" class="chart animated" data-chart-height="550" data-animations="bounceIn"></div>
+                        </div>
+                        <p class="mobile-visible">
+                            <a href="charts.php#chart-q3-c5" target="_blank">Toon grafiek &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -2771,7 +3121,8 @@
 <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="bower_components/c3/c3.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/min/scripts-min.js"></script>
 
 </body>
 </html>
