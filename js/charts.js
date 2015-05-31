@@ -16,7 +16,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -39,7 +42,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -62,7 +68,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -85,7 +94,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -108,7 +120,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -131,7 +146,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -154,7 +172,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -177,7 +198,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -200,7 +224,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -223,7 +250,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -246,7 +276,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -269,7 +302,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -296,7 +332,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -319,7 +358,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -342,7 +384,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -365,7 +410,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -388,7 +436,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -411,7 +462,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -434,7 +488,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -457,7 +514,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -480,7 +540,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -503,7 +566,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -526,7 +592,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -549,7 +618,10 @@ var initializeCharts = {
                         bottom: 0
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -572,7 +644,10 @@ var initializeCharts = {
                         bottom: 300
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -598,7 +673,10 @@ var initializeCharts = {
                         bottom: 300
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -624,7 +702,10 @@ var initializeCharts = {
                         bottom: 300
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -650,7 +731,10 @@ var initializeCharts = {
                         bottom: 300
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
@@ -676,7 +760,10 @@ var initializeCharts = {
                         bottom: 300
                     },
                     tick: {
-                        format: function (d) { return d + "%"; }
+                        format: function (d) {
+                                    var percentage = d3.format('.2%');
+                                    return percentage(d / 100);
+                        }
                     }
                 }
             },
