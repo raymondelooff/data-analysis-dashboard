@@ -79,7 +79,7 @@ function trendanalysis(chart_id, chart_data, chart) {
                 if (index > 1) {
                     first_value = data_values[index - 2];
                     second_value = data_values[index - 1];
-                    third_value = d3.round((first_value + second_value + data_values[index]) / 3, 1);
+                    third_value = (first_value + second_value + data_values[index]) / 3;
                 }
 
                 // Store value in array
