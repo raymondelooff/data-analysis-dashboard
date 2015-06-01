@@ -3109,10 +3109,10 @@
 
     </section>
 
-    <section class="section question" data-anchor="section-6">
+    <section class="section question" data-anchor="section-8">
         <div class="container animated" data-animations="bounceInUp">
             <h1>Conclusie</h1>
-            <p></p>
+            <p>Uit de analyse en visualisatie van de data blijkt dat er daadwerkelijk een verband is tussen leeftijd en vrijetijdsbesteding. Ook is er een verband tussen opleidingsniveau en vrijetijdsbesteding, het laatste verband is duidelijker zichtbaar.</p>
         </div>
     </section>
 
