@@ -1556,7 +1556,7 @@
 
     <section class="section question" data-anchor="section-4">
         <div class="container animated" data-animations="bounceInUp">
-            <h1>Is er een verband tussen opleidingsniveau's en vrijetijdsbesteding?</h1>
+            <h1>Is er een verband tussen opleidingsniveau en vrijetijdsbesteding?</h1>
             <p></p>
         </div>
     </section>

@@ -66,7 +66,7 @@ function trendanalysis(chart_id, chart_data, chart) {
         // Moving average
         if (chart['moving_average_key'] != undefined) {
 
-            var averages = ["3-staps voortschrijdend gemiddelde"];
+            var averages = ["3-staps moving average"];
 
             $.each(data_keys, function (index, x) {
 
