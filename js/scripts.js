@@ -149,7 +149,7 @@ $(document).ready(function() {
             var chart_data = {
                 bindto: '#chart-' + chart_id,
                 data: {
-                    url: '/data/chart-' + chart_id + '.json',
+                    url: 'data/chart-' + chart_id + '.json',
                     mimeType: 'json'
                 },
                 axis: {
